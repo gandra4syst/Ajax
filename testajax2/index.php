@@ -18,7 +18,7 @@
                 success: function(dados) {
                     var nomes = JSON.parse(dados);
                    // document.getElementById('text').innerHTML=dados;
-                   $('#text').text(nomes);
+                   $('#text').text(nomes[1]['nome'] + ' ' + nomes[1]['apelido']);
                 },
                 error: function() {
                     console.log('ERRO');
